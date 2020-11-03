@@ -1,0 +1,7 @@
+.TitleBar {
+    -webkit-app-region: drag;
+    height: 30px;
+    position: fixed;
+    width: 100vw;
+    z-index: 999;
+}

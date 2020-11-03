@@ -1,0 +1,43 @@
+@font-face {
+  font-family: Metropolis;
+  src: url('./Ressources//Fonts/Metropolis-Bold.otf');
+}
+
+@font-face {
+  font-family: Metropolis-Bold;
+  src: url('./Ressources//Fonts/Metropolis-ExtraBold.otf');
+}
+
+@font-face {
+  font-family: Metropolis-Regular;
+  src: url('./Ressources//Fonts/Metropolis-Regular.otf');
+}
+
+@font-face {
+  font-family: Metropolis-Light;
+  src: url('./Ressources//Fonts/Metropolis-Light.otf');
+}
+
+
+.mainLoader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+}
+
+.logoLoader {
+  width: 150px;
+  animation: logoAnimation 1.8s infinite;
+}
+
+@keyframes logoAnimation {
+  0% {
+    transform: rotate(0deg)
+  }
+  100% {
+    transform: rotate(360deg)
+  }
+}
