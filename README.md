@@ -1,4 +1,4 @@
-# Strip Desktop App
+# Rokes Desktop App
 
 Project by [Thomas Yazitzoglou]('https://www.thomasyaz.com').
 
