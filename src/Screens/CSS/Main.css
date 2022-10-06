@@ -1,0 +1,52 @@
+.Main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.draggable {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 20px;
+    z-index: 999;
+    -webkit-user-select: none;
+    -webkit-app-region: drag;
+}
+
+.main-container {
+    margin-left: 215px;
+    width: calc(100vw - 215px);
+    padding: 10px;
+    padding-left: 30px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container-loader {
+    margin-left: 215px;
+    height: 100vh;
+    width: calc(100vw - 215px);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-container h1, .main-container h2 {
+    margin: 10px 0px;
+    font-size: 16px;
+    color: var(--blue);
+}
+
+.item-container {
+    width: 100%;
+    display: grid;
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-template-columns: repeat(auto-fit, 300px);
+}

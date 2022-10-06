@@ -1,0 +1,78 @@
+.Overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    background-color: rgb(210, 210, 210, .7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+}
+
+.overlay-form {
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    user-select: none;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.overlay-form.loaderDiv {
+    padding-top: 25px;
+}
+
+.overlay-form h1 {
+    margin: 0;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 24px;
+}
+
+.overlay-form .check {
+    font-size: 30px;
+    color: rgb(0, 128, 227);
+}
+
+.overlay-form h2 {
+    margin: 30px 10px 10px 10px;
+    font-size: 16px;
+}
+
+.overlay-form p {
+    width: 100%;
+}
+
+.overlay-form .buttons {
+    margin: 10px;
+}
+
+
+.buttons button {
+    border: none;
+    width: 100px;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 2px;
+    margin: 0px 15px;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    opacity: .7;
+}
+
+button.leave {
+    background-color: rgb(255, 75, 75);
+    color: white;
+}
+
+button.stay {
+    border: 1px solid lightgrey;
+    color: grey;
+    background-color: transparent;
+}

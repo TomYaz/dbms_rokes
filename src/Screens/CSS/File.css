@@ -1,0 +1,236 @@
+.File {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.form {
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    overflow-y: scroll;
+    padding: 0px 0px 100px 0px;
+    scrollbar-width: none;
+    margin: 40px 0px;
+}
+
+.form::-webkit-scrollbar {
+    display: none;
+}
+
+.back,
+.save,
+.print,
+.delete {
+    position: absolute;
+    top: 78px;
+    left: 0;
+    border: none;
+    font-size: 18px;
+    padding: 5px 20px;
+    outline: none;
+    color: var(--blue);
+    transition: .08s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--blue);
+    background-color: white;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+}
+
+.save,
+.print,
+.delete {
+    padding: 5px 10px;
+    top: 75px;
+    border: none;
+    left: auto;
+    right:  calc(8vw + 132px);
+    color: var(--blue);
+    background-color: white;
+    border-bottom: 1px solid var(--blue);
+    box-shadow: none;
+}
+
+.delete {
+    right: calc(8vw);
+    border-bottom: 1px solid rgb(230, 0, 0);
+}
+
+.delete-icon {
+    font-size: 28px;
+    color: rgb(230, 0, 0);
+}
+
+
+.print {
+    right: calc(8vw + 65px);
+}
+
+.back .icon {
+    font-size: 30px;
+}
+
+.save .icon,
+.print .icon {
+    color: var(--blue);
+    font-size: 28px;
+}
+
+.save:hover,
+.print:hover {
+    cursor: pointer;
+    padding-bottom: 8px;
+}
+
+.delete:hover {
+    cursor: pointer;
+    padding-bottom: 8px;
+}
+
+.back:hover {
+    cursor: pointer;
+    background-color: lightgrey;
+}
+
+.form .title {
+    padding: 20px 0px 10px 80px;
+    background-color: rgb(255, 255, 255);
+    color: var(--blue);
+}
+
+.form .subtitle {
+    padding: 10px 0px 10px 30px;
+    font-size: 22px;
+    background-color: var(--blue);
+    color: white;
+    margin: 0;
+}
+
+.section-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px 20px;
+}
+
+.section-two {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 15px 20px;
+}
+
+.section-one .inner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 20px;
+    flex-direction: column;
+}
+
+.upload-outer {
+    width: 30%;
+    height: 50vh;
+    align-self: flex-start;
+    background-color: rgb(235, 235, 235);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.upload-img {
+    object-fit: contain;
+    width: 90%;
+    height: 90%;
+}
+
+input.upload {
+    width: 50%;
+    background-color: white;
+    text-align: center;
+}
+
+.input-outer {
+    display: flex;
+    margin: 10px 0px;
+}
+
+.input-outer .inputTitle {
+    background-color: rgb(235, 235, 235);
+    border: 1px solid rgb(235, 235, 235);
+    width: 150px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.input-outer input {
+    border-radius: 0px;
+    border: 1px solid rgb(235, 235, 235);
+    border-left: none;
+    outline: none;
+    font-family: f-regular;
+    font-size: 14px;
+    padding: 0px 10px;
+    width: 30vw;
+}
+
+.input-outer textarea {
+    border-radius: 0px;
+    border: 1px solid rgb(235, 235, 235);
+    outline: none;
+    padding: 10px;
+    font-family: f-regular;
+    font-size: 14px;
+    width: 40vw;
+    height: 300px;
+    resize: none;
+}
+
+.checkbox-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.checkbox-row-sep {
+    height: 100%;
+    width: 1px;
+    background-color: var(--blue);
+}
+
+.checkbox-inner {
+    display: flex;
+    padding: 0px 20px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.checkbox-inner input {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    margin: 0px 10px 0px 0px;
+    color: lightgrey;
+}
+
+.checkbox-inner label {
+    font-family: f-regular;
+    margin: 0;
+    font-size: 14px;
+    padding: 0;
+}

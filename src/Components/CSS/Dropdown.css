@@ -1,0 +1,83 @@
+.Dropdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.Dropdown {
+    padding: 2px 10px;
+    height: 30px;
+    width: 150px;
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    transition: .2s;
+}
+
+.Dropdown:hover {
+    cursor: pointer;
+    background-color: rgb(42, 42, 42);
+    color: white;
+}
+
+.Dropdown h1 {
+    font-size: 14px;
+    margin: 0;
+    font-family: f-light;
+}
+
+.Dropdown .icon {
+    margin: 4px 0px 0px 8px;
+    font-size: 10px;
+}
+
+.Dropdown-container .list-external {
+    z-index: 999;
+    width: calc(100%);
+    position: relative;
+}
+
+.Dropdown-container .list {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    max-height: 150px;
+    position: absolute;
+    padding: 5px 0px;
+    overflow-y: scroll;
+}
+
+.list li:hover {
+    cursor: pointer;
+    background-color: rgba(65, 65, 242, 0.8);
+    color: white;
+}
+
+.list li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    transition: .2s;
+    margin: 0px 0px 0px 5px;
+
+}
+
+li label {
+    font-size: 16px;
+    padding: 10px 10px;
+}
+
+.list input {
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+}
+
+.list label {
+    font-family: f-Regular;
+    font-size: 12px;
+}

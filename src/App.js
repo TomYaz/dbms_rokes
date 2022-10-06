@@ -1,23 +1,20 @@
 import React from 'react';
-import { Redirect } from 'react-router-dom';
-import { authentication } from './Firebase/FirebaseLoader';
-import logo from './Ressources/Images/icon.png';
+import logo from './Ressources/Images/logodb.png';
 import './App.css';
+import { gotToScreen } from './HelperFunctions';
+import Loader from './Components/Loader';
 
 function App() {
-  setTimeout(() => {
-    if (authentication.currentUser) {
-      document.location.pathname = '/projectselection' // to change
-    } else
-      return (
-        document.location.pathname = '/start'
-      )
 
-  }, 3000)
+  setTimeout(() => {
+    gotToScreen('login');
+    localStorage.setItem('object_isActive', false);
+  }, 2000)
 
   return (
     <div className="mainLoader">
-      <img src={logo} className="logoLoader" />
+      <Loader />
+      <h1 className='regular'><span className='black'>Rokes</span> database</h1>
     </div>
   )
 }

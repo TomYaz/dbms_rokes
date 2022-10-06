@@ -3,20 +3,21 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { Route, Link, Switch, BrowserRouter as Router } from 'react-router-dom'
-
-import Start from './Screens/Start';
-import ProjectSelection from './Screens/ProjectSelection';
-import Dashboard from './Screens/Dashboard';
+import { Route, Switch, BrowserRouter as Router } from 'react-router-dom'
+import Login from './Screens/Login';
+import Main from './Screens/Main';
+import File from './Screens/File';
+import Print from './Screens/Print';
 
 const routing = (
   <Router>
     <div>
       <Switch>
         <Route exact path="/" component={App} />
-        <Route exact path="/start" component={Start} />
-        <Route exact path="/projectselection" component={ProjectSelection} />
-        <Route exact path="/dashboard" component={Dashboard} />
+        <Route exact path="/login" component={Login} />
+        <Route exact path="/main" component={Main} />
+        <Route exact path="/file" component={File} />
+        <Route exact path="/print" component={Print} />
       </Switch>
     </div>
   </Router>

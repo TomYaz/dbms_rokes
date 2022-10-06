@@ -1,0 +1,78 @@
+.Login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+}
+
+.Login .outerForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50vw;
+    border-radius: 5px;
+}
+
+.Login h1,
+h2 {
+    font-family: f-black;
+    font-size: 30px;
+    margin: 0px 0px 20px 0px;
+    width: 100%;
+}
+
+.Login .login-title {
+    padding: 5px 10px;
+    color: white;
+    background-color: rgb(42, 42, 42);
+}
+
+.Login h2 {
+    font-family: f-light;
+    font-size: 16px;
+    text-align: center;
+    color: rgb(42, 42, 42);
+    background-color: transparent;
+}
+
+.form .row {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.Login input {
+    border: none;
+    border: 1px solid lightgrey;
+    width: 200px;
+    background-color: white;
+    padding: 10px 0px;
+    font-size: 14px;
+    text-align: center;
+    font-family: f-regular;
+    border-radius: 3px;
+    outline: none;
+}
+
+.submit {
+    border: none;
+    font-family: f-regular;
+    padding: 7px 15px;
+    margin-top: 20px;
+    font-size: 14px;
+    background-color: rgb(41, 41, 41);
+    color: white;
+    outline: none;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.submit:hover {
+    background-color: grey;
+}

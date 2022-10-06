@@ -1,0 +1,158 @@
+.Print {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 5vh;
+    flex-direction: column;
+}
+
+.printTitle {
+    border-bottom: 1px solid black;
+    height: 50px;
+    width: 85vw;
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.object-number {
+    position: fixed;
+    top: 1.5vh;
+    right: 1.5vh;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+}
+
+.print-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.Print .print {
+    right: 0;
+    top: 5vh;
+}
+
+.print-print,
+.print-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 25px;
+    border-radius: 2px;
+    margin-left: 5px;
+    cursor: pointer;
+    background-color: white;
+    color: var(--blue);
+    transition: .2s;
+    border-color: var(--blue);
+}
+
+.print-print:hover {
+    background-color: var(--blue);
+    color: white;
+}
+
+.print-back:hover {
+    background-color: rgb(230, 0, 0);
+    color: white;
+}
+
+.print-back {
+    margin-left: 0;
+    margin-right: 5px;
+    color: rgb(230, 0, 0);
+    border-color: rgb(230, 0, 0);
+}
+
+.print-icon {
+    font-size: 26px;
+}
+
+.print-img {
+    width: 150px;
+    object-fit: contain;
+}
+
+.print-row {
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0px;
+}
+
+.print-row .title {
+    border: 1px solid black;
+    border-right: none;
+    color: black;
+    padding: 8px 12px;
+    font-size: 14px;
+    white-space: nowrap;
+
+}
+
+.fixed-label {
+    width: 100px;
+}
+
+.fixed-label2 {
+    width: 200px;
+}
+
+.print-row .answer,
+.answer2 {
+    border: 1px solid black;
+    color: black;
+    padding: 8px 12px;
+    width: 100%;
+    font-size: 14px;
+}
+
+.answer2 {
+    border-left: none;
+    width: auto;
+}
+
+.answer.fixed-small {
+    padding-bottom: 75px;
+    min-width: 70vw;
+    white-space: pre-wrap;
+}
+
+.answer.fixed-line {
+    min-width: 35vw;
+}
+
+.answer.fixed {
+    min-height: 200px;
+    padding-bottom: 100px;
+    min-width: 70vw;
+    white-space: pre-wrap;
+}
+
+.answer.fixed-length {
+    min-width: 400px;
+}
+
+.print-subtitle {
+    border-bottom: 5px double black;
+    margin: 30px 0px 10px 0px;
+    padding-bottom: 5px;
+    width: 100%;
+    font-size: 16px;
+}
+
+
+.signature {
+    margin: 100px 100px 0px 0px;
+    border-top: 1px solid black;
+    padding: 10px 60px 0px 0px;
+    font-size: 14px;
+}

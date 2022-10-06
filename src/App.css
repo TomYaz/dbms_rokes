@@ -1,21 +1,60 @@
 @font-face {
-  font-family: Metropolis;
-  src: url('./Ressources//Fonts/Metropolis-Bold.otf');
+  font-family: f-Regular;
+  src: url('./Ressources/Fonts/static/Inter-Regular.ttf');
 }
 
 @font-face {
-  font-family: Metropolis-Bold;
-  src: url('./Ressources//Fonts/Metropolis-ExtraBold.otf');
+  font-family: f-Bold;
+  src: url('./Ressources/Fonts/static/Inter-Bold.ttf');
 }
 
 @font-face {
-  font-family: Metropolis-Regular;
-  src: url('./Ressources//Fonts/Metropolis-Regular.otf');
+  font-family: f-semiBold;
+  src: url('./Ressources/Fonts/static/Inter-SemiBold.ttf');
 }
 
 @font-face {
-  font-family: Metropolis-Light;
-  src: url('./Ressources//Fonts/Metropolis-Light.otf');
+  font-family: f-Medium;
+  src: url('./Ressources/Fonts/static/Inter-Medium.ttf');
+}
+
+@font-face {
+  font-family: f-Light;
+  src: url('./Ressources/Fonts/static/Inter-Light.ttf');
+}
+
+@font-face {
+  font-family: f-exraLight;
+  src: url('./Ressources/Fonts/static/Inter-ExtraLight.ttf');
+}
+
+@font-face {
+  font-family: f-Black;
+  src: url('./Ressources/Fonts/static/Inter-Black.ttf');
+}
+
+.regular {
+  font-family: f-Regular;
+}
+
+.medium {
+  font-family: f-Medium;
+}
+
+.bold {
+  font-family: f-Bold;
+}
+
+.light {
+  font-family: f-Light;
+}
+
+.extraLight {
+  font-family: f-exraLight;
+}
+
+.black {
+  font-family: f-Black;
 }
 
 
@@ -28,16 +67,35 @@
   flex-direction: column;
 }
 
-.logoLoader {
-  width: 150px;
-  animation: logoAnimation 1.8s infinite;
+.mainLoader h1 {
+  font-size: 20px;
+  margin-top: 50px;
+  border-bottom: 1px solid lightgrey;
 }
+
+.logoLoader {
+  width: 500px;
+  animation: logoAnimation 3s infinite;
+}
+
 
 @keyframes logoAnimation {
   0% {
-    transform: rotate(0deg)
+    opacity: 0;
   }
+
+  60% {
+    opacity: 1;
+  }
+
   100% {
-    transform: rotate(360deg)
+    opacity: 0;
   }
+}
+
+/* Colors */
+
+:root {
+  --blue: #152230;
+  --red: #9b0d0d;
 }

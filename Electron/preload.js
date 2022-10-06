@@ -8,6 +8,10 @@ process.once('loaded', () => {
     global.clearImmediate = _clearImmediate;
 });
 
+window.reload = function () {
+    ipcRenderer.send('reload');
+};
+
 window.resizeWindow = function () {
     ipcRenderer.send('resize-to-bigger');
 };

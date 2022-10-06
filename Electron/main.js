@@ -29,6 +29,10 @@ function createWindow() {
 
 }
 
+ipcMain.on('reload', (event, arg) => {
+    mainWindow.reload();
+})
+
 ipcMain.on('resize-to-bigger', (event, arg) => {
     mainWindow.setSize(1300, 750, false);
     mainWindow.center();
@@ -45,7 +49,7 @@ ipcMain.on('resize-to-double', (event, arg) => {
     if (!mainWindow.isMaximized()) {
         mainWindow.maximize()
     } else {
-        mainWindow.setSize( mainWindow.getMaximumSize()[0],  mainWindow.getMaximumSize()[1], true);
+        mainWindow.setSize(mainWindow.getMaximumSize()[0], mainWindow.getMaximumSize()[1], true);
         mainWindow.center();
     }
 });

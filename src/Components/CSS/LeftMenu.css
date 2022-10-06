@@ -1,0 +1,100 @@
+.Menu {
+    width: 200px;
+    position: fixed;
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(28, 45, 64, 1) 0%, rgba(21, 34, 48, 1) 100%);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    padding: 25px 0px 0px 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.Menu .title {
+    border-bottom: 1px solid rgb(202, 202, 202);
+    width: 80%;
+    margin: 15px 0px 0px 0px;
+    color: white;
+}
+
+.Menu .subtitle {
+    margin: 15px 0px 0px 0px;
+    font-size: 20px;
+    color: lightblue;
+}
+
+.Menu .dropdownTitle {
+    margin: 15px 0px 10px 0px;
+    font-size: 16px;
+    color: whitesmoke;
+}
+
+.Menu .buttons-left {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.Menu .search {
+    border: none;
+    padding: 5px 10px;
+    width: 80%;
+}
+
+.Menu button {
+    border: none;
+    font-family: f-bold;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    margin-top: 10px;
+    transition: .2s;
+    margin-right: 10px;
+}
+
+.Menu button:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+button .icon {
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+.Menu .searchB {
+    background-color: rgb(53, 125, 212);
+    color: white;
+}
+
+.Menu .clearB {
+    background-color: rgb(212, 53, 53);
+    color: white;
+}
+
+.Menu .newItem {
+    width: 65%;
+    padding: 10px 0px;
+    border-radius: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    background-color: white;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    align-self: center;
+    bottom: 50px;
+    position: absolute;
+    font-size: 16px;
+    color: var(--blue);
+}
+
+.newItem .icon {
+    font-size: 22px;
+}
