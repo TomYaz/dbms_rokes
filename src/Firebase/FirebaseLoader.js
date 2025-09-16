@@ -5,14 +5,7 @@ import { getStorage, ref, uploadBytes, uploadString } from "firebase/storage";
 
 // Initialize Firebase
 const firebaseConfig = {
-    apiKey: "AIzaSyDD6Ie8DouyKgB82vQe1le9p_AAEUUXqso",
-    authDomain: "strip-7864c.firebaseapp.com",
-    databaseURL: "https://strip-7864c.firebaseio.com",
-    projectId: "strip-7864c",
-    storageBucket: "strip-7864c.appspot.com",
-    messagingSenderId: "357095372061",
-    appId: "1:357095372061:web:1d07b823b255ba911d1df4",
-    measurementId: "G-SX8SHMJSK7"
+    
 };
 
 export const app = initializeApp(firebaseConfig);
